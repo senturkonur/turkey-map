@@ -1,0 +1,12 @@
+<div class="container mt-5">
+  <div *ngIf="barChartData" class="chart-custom" style="max-height: 250px">
+    <canvas baseChart [datasets]="barChartData" [labels]="chartLabel" [chartType]="chartType" [options]="chartOptions"
+            width="500" height="300"></canvas>
+    <div class="text-center mt-3">
+      <h2>Türkiye Günlük Covid-19 Tablosu</h2>
+    </div>
+  </div>
+
+
+</div>
+
